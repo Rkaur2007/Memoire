@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notestitle"
+        android:text="NOTES"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="401dp"
+        android:layout_height="722dp"
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/notestitle"
+        android:layout_above="@id/addnewnotebtn"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnewnotebtn"
+        android:text="Add a new note"
+        android:layout_alignParentBottom="true"
+        android:textColor="#00B0FF"
+        android:backgroundTint="@color/white"
+        />
+</RelativeLayout>
